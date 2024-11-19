@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">早餐輪盤</h1>
+        <div id="wheel-container">
+            <!-- 深色圓形前景 -->
+            <div id="wheel-pin"></div>
+            <!-- 深色圓形背景 -->
+            <div id="wheel-background"></div>
+            <!-- 輪盤畫布 -->
+            <canvas id="spin-wheel" width="400" height="400"></canvas>
+        </div>
+        
+        <!-- 其他控制按鈕 -->
+        <div class="control-buttons">
+            <button class="spin-btn" onclick="spinWheel()">決定你的早餐吧！</button>
+        </div>
+        
+        <!-- 新增、刪除項目管理 -->
+        <div class="manage-items">
+            <input type="text" id="item-input" class="input-item" placeholder="新增項目">
+            <button class="manage-btn" onclick="addItem()">新增項目</button>
+            <button class="manage-btn" onclick="removeItem()">刪除項目</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* 基本頁面設置 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px; /* 假設您希望容器寬度稍微增大，您可以根據需要調整 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 標題 */
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#wheel-container {
+    position: relative;
+    margin-bottom: 30px;
+    width: 400px; /* 確保與 canvas 寬度相同 */
+    height: 400px; /* 確保與 canvas 高度相同 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 圓形背景 */
+#wheel-background {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #333; /* 深色背景 */
+    border-radius: 50%;
+    z-index: 0; /* 讓背景圓形在輪盤後面 */
+}
+
+/* 圓形背景 */
+#wheel-pin{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    background-color: #333; /* 深色背景 */
+    border-radius: 50%;
+    z-index: 2; /* 讓背景圓形在輪盤後面 */
+}
+
+/* 按鈕區域 */
+.control-buttons {
+    margin-bottom: 30px;
+}
+
+.spin-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.spin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 管理項目的輸入框和按鈕 */
+.manage-items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-item {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.manage-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px;
+}
+
+.manage-btn:hover {
+    background-color: #218838;
+}
+
+.manage-btn:last-child {
+    background-color: #dc3545;
+}
+
+.manage-btn:last-child:hover {
+    background-color: #c82333;
+}
+
+#spin-wheel{
+  z-index: 1;
+}
